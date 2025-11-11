@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexa</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+  </head>
+  <body>
+    <main class="welcome-screen">
+      <div class="welcome-content">
+        <h1 class="welcome-title">Welcome to Nexa</h1>
+        <p class="welcome-text">Your AI Assistant for Smart Conversations</p>
+        <div class="features">
+          <div class="feature-item">
+            <span class="material-symbols-outlined">psychology</span>
+            <p>Smart Responses</p>
+          </div>
+          <div class="feature-item">
+            <span class="material-symbols-outlined">calculate</span>
+            <p>Quick Calculations</p>
+          </div>
+          <div class="feature-item">
+            <span class="material-symbols-outlined">tips_and_updates</span>
+            <p>Helpful Advice</p>
+          </div>
+        </div>
+        <p class="start-hint">Click the chat icon to begin</p>
+      </div>
+    </main>
+
+    
+      <button type="button" class="chatbot-toggler" aria-label="Toggle chat">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+      </button>
+
+<div class="container"></div>
+      <div class="chatbot" role="dialog" aria-label="Chat with Nexa">
+        <header class="chatbot-header">
+          <div class="header-content">
+            <span class="bot-avatar material-symbols-outlined">smart_toy</span>
+            <h2>Nexa</h2>
+            <span class="status-indicator">Online</span>
+          </div>
+          <button class="close-btn material-symbols-outlined" aria-label="Close chat">close</button>
+        </header>
+
+        <ul class="chatbox" role="log" aria-live="polite">
+          <li class="chat incoming">
+            <div class="chat-content">
+              <span class="material-symbols-outlined">smart_toy</span>
+              <div class="message">
+                <p>Hello! 👋</p>
+                <p>I'm Nexa, your AI assistant. How can I help you today?</p>
+              </div>
+            </div>
+            <time class="chat-time" datetime="2025-10-30">Just now</time>
+          </li>
+        </ul>
+<!-- 🌸 Chat Input -->
+        <div class="chat-input">
+          <div class="input-wrapper">
+            <textarea
+              placeholder="Type your message here..."
+              spellcheck="false"
+              required
+              aria-label="Chat message"
+            ></textarea>
+            <div class="chat-actions">
+                <button class="mic-btn material-symbols-outlined" title="Voice Input">mic</button>
+                
+            </div>
+            <button class="send-btn" aria-label="Send message">
+              <span class="material-symbols-outlined">send</span>
+            </button>
+          </div>
+          <div class="typing-indicator" hidden>
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
